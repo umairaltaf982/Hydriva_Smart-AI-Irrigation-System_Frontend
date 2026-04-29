@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="32" y1="8" x2="32" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#bbf7d0" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+
+  <!-- Water droplet shape -->
+  <path d="M32 10 C32 10 16 28 16 38 C16 47.4 23.2 55 32 55 C40.8 55 48 47.4 48 38 C48 28 32 10 32 10Z"
+        fill="url(#drop)"/>
+
+  <!-- Leaf vein inside droplet -->
+  <path d="M32 28 C32 28 26 35 26 40 C26 43.3 28.7 46 32 46"
+        stroke="#16a34a" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Highlight glint -->
+  <ellipse cx="27" cy="32" rx="3" ry="5" fill="white" opacity="0.35" transform="rotate(-20 27 32)"/>
+</svg>
